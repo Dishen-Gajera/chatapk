@@ -142,7 +142,7 @@ function MessageArea() {
               </h1>
             </div>
             <div
-              className={`w-full flex flex-col pt-3 px-1.5 overflow-auto bg-slate-100 mb-[105px] gap-2`}
+              className={`w-full flex flex-col pt-3 px-1.5 overflow-auto bg-slate-100 mb-[90px] gap-2`}
             >
               {showPicker && (
                 <div className="absolute bottom-[90px] left-4 z-10 ">
