@@ -22,7 +22,6 @@ function Sidebar() {
   let [search, setSearch] = useState(false);
   let [input, setInput] = useState("");
   let dispatch = useDispatch();
-  console.log(otherUsers);
   const handleLogout = async () => {
     try {
       await axios.get(`${serverUrl}/api/auth/logout`, {
@@ -32,7 +31,6 @@ function Sidebar() {
       dispatch(setOtherUsers(null));
       dispatch(setMessages([]));
     } catch (error) {
-      console.log(error);
     }
   };
 
@@ -44,7 +42,6 @@ function Sidebar() {
       });
       dispatch(setSearchedUsers(searched.data));
     } catch (error) {
-      console.log(error.response.data.message);
     }
   };
 

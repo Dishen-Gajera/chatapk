@@ -19,11 +19,9 @@ function App() {
   let { userData, socket, onlineUsers } = useSelector((state) => state.user);
   useEffect(() => {
     if (!userData?._id) return;
-    console.log("user data " + userData?._id);
     const socketio = io(`${serverUrl}`, {
       query: { userId: userData?._id },
     });
-    console.log(socketio);
     dispatch(setSocket(socketio));
 
     socketio.on("getOnlineUsers", (users) => {

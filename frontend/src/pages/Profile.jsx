@@ -18,14 +18,12 @@ function Profile() {
   let [saving, setSaving] = useState(false);
   let image = useRef();
   let refname = useRef();
-  console.log("profile");
   let navigate = useNavigate();
 
   const handleImage = (e) => {
     let file = e.target.files[0];
     setbackendImage(file);
     setfrontendImage(URL.createObjectURL(file));
-    console.log(frontendImage);
   };
 
   const handleProfile = async (e) => {
@@ -44,7 +42,6 @@ function Profile() {
       dispatch(setUserData(result.data));
       navigate("/");
     } catch (error) {
-      console.log(error.response.data.message);
       setSaving(false);
     }
   };

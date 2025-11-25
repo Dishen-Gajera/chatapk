@@ -3,7 +3,7 @@ import User from "../models/user.model.js";
 import gentoken from "../config/gentoken.js";
 
 export const postSignUp = async (req, res) => {
-  console.log("aayo call aayo");
+  
   const { username, email, password } = req.body;
 
   try {

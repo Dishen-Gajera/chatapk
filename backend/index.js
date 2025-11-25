@@ -26,5 +26,4 @@ app.use("/api/message", messageRouter);
 
 server.listen(port, () => {
   connectDb();
-  console.log("server is started", port);
 });

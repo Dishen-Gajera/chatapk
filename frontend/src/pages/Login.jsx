@@ -25,11 +25,9 @@ function Login() {
         { email, password },
         { withCredentials: true }
       );
-      console.log(response.data);
       dispatch(setUserData(response.data));
       setStatus(false);
     } catch (error) {
-      console.log(error.response.data.message);
       setErrorMsg(error.response.data.message);
       setStatus(false);
     }

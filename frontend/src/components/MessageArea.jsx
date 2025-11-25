@@ -40,7 +40,6 @@ function MessageArea() {
   };
 
   const onSendMessage = async (e) => {
-    console.log("gyo mesafe");
     e.preventDefault();
     try {
       let formData = new FormData();
@@ -61,7 +60,6 @@ function MessageArea() {
       setInput("");
       setBackendImage("");
       setfrontenImage("");
-      console.log(error);
     }
   };
 
@@ -74,12 +72,10 @@ function MessageArea() {
     setInput("");
     setBackendImage("");
     setfrontenImage("");
-    console.log("mesag" + messages);
     const handleMessage = (mess) => {
       if (selectedUser?._id == mess.sender) {
         // receiver means who send message from another account because here receiver means opposite account who send message
         dispatch(setRealTimeMessage(mess));
-        console.log(mess);
       }
     };
     socket.off("newMessage");

@@ -15,10 +15,8 @@ function userOtherUsers() {
         });
         dispatch(setOtherUsers(response.data));
       } catch (error) {
-        console.log(error);
       }
     }
-    console.log("set other");
     fetchUser();
   }, [userData]);
 }
