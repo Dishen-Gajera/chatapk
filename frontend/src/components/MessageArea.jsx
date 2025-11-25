@@ -111,7 +111,7 @@ function MessageArea() {
         } ${showImage ? "hidden" : "block"}  px-0.5 relative`}
       >
         {selectedUser && (
-          <div className="flex flex-col w-full h-screen bg-slate-100 fixed top-0">
+          <div className="flex flex-col w-full h-screen bg-slate-100">
             <div className="w-full h-[100px] bg-[#1797c2] rounded-b-[30px] shadow-gray-400 shadow-lg flex items-center px-5 gap-4">
               <div className="cursor-pointer ">
                 <IoArrowBackOutline
