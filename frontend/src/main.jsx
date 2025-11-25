@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import { Provider } from "react-redux";
 import store from "./Redux/store";
-export const serverUrl = "http://localhost:8000";
+export const serverUrl = "https://chatapk-backend.onrender.com";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
