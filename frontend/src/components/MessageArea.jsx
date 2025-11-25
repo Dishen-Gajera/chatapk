@@ -206,7 +206,7 @@ function MessageArea() {
           </div>
         )}
         {selectedUser && (
-          <div className="w-full lg:w-[70%] h-[100px] fixed bottom-2 flex items-center justify-center -ml-0.5 ">
+          <div className="w-full lg:w-[70%] h-[100px] fixed bottom-[2%] flex items-center justify-center -ml-0.5 ">
             <form
               className="w-[97%] h-[50px] bg-white rounded-full shadow-gray-400 shadow-lg flex items-center lg:gap-5 px-4 gap-2"
               onSubmit={onSendMessage}
