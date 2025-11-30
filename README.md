@@ -1,11 +1,13 @@
-This is real time chat app using mern stack.
-in this project we used socket io for real time conversation.
-in website we display user online status or send
-photo or messages. 
+This real-time chat app is built using the MERN stack and styled with Tailwind CSS.It is fully responsive , providing a smooth experience on desktopc, tablet , and mobile devices.
 
-this is working url of this website:
+Features :
+        Fully responsive design for all screen sizes.
+        Instant messaging using Socket.IO.
+        Display online/offline status of users.
+        Send messages, photos, and emojis in real time.
 
-https://chatapk-frontend.onrender.com/
+Check out the working app:
+https://chatapk-frontend.onrender.com
 
-if you like my project give me 🌟. 
-have a good day 👨‍💻 👩‍💻 🙂 .
+If you like my project, give it a 🌟!
+Have a great day 👨‍💻👩‍💻🙂.
