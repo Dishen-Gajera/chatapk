@@ -58,8 +58,8 @@ function Sidebar() {
         selectedUser ? "hidden lg:block" : ""
       } lg:border-2 lg:border-slate-200`}
     >
-      <div className="w-[55px] h-[55px] overflow-hidden rounded-full flex justify-center items-center shadow-gray-500= shadow-lg bg-[#20c7ff] cursor-pointer fixed bottom-4 left-1 z-50">
-        <BiLogOutCircle className="w-[25px] h-[25px]" onClick={handleLogout} />
+      <div className="w-[55px] h-[55px] overflow-hidden rounded-full flex justify-center items-center shadow-gray-500= shadow-lg bg-[#20c7ff] cursor-pointer fixed bottom-4 left-1 z-50" onClick={handleLogout}>
+        <BiLogOutCircle className="w-[25px] h-[25px]" />
       </div>
       <div className="w-full h-[250px] bg-[#20c7ff] rounded-b-[30%] shadow-gray-400 shadow-lg flex flex-col justify-center  px-5">
         <h1 className="text-white font-bold text-[25px] ">DG Chat</h1>
