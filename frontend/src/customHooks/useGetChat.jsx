@@ -10,12 +10,16 @@ function useGetChat() {
   let dispatch = useDispatch();
   useEffect(() => {
     const fetchMessages = async () => {
-      let response = await axios.get(
+      try{
+        let response = await axios.get(
         `${serverUrl}/api/message/chat/${selectedUser._id}`,
         { withCredentials: true }
       );
-      
       dispatch(setMessages(response.data));
+      }catch(error){
+        dispatch(setMessages([]));
+      }
+      
     };
     fetchMessages();
   }, [userData, selectedUser]);
