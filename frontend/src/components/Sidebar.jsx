@@ -22,7 +22,7 @@ function Sidebar() {
   let [search, setSearch] = useState(false);
   let [input, setInput] = useState("");
   let dispatch = useDispatch();
-  const handle = async () => {
+  const handleLogout = async () => {
     try {
       await axios.get(`${serverUrl}/api/auth/logout`, {
         withCredentials: true,
